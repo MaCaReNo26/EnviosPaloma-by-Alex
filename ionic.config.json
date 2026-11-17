@@ -1,0 +1,7 @@
+{
+  "name": "ChatDualApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
