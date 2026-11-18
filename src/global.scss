@@ -35,3 +35,101 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+
+body[data-theme='rojo-negro'] {
+  --ion-color-primary: #d32f2f;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-background-color: #0e0e10;
+  --ion-text-color: #f5f5f7;
+  --ion-item-background: #1a1a1e;
+  --ion-card-background: #1a1a1e;
+  --ion-toolbar-background: #161619;
+  --ion-tab-bar-background: #161619;
+  --chat-my-bubble: #4a1515;
+  --chat-other-bubble: #1e1e24;
+  --chat-bg: #0e0e10;
+}
+
+body[data-theme='rojo-blanco'] {
+  --ion-color-primary: #c62828;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-background-color: #f6f6f8;
+  --ion-text-color: #1c1c1e;
+  --ion-item-background: #ffffff;
+  --ion-card-background: #ffffff;
+  --ion-toolbar-background: #c62828;
+  --ion-tab-bar-background: #ffffff;
+  --chat-my-bubble: #ffebee;
+  --chat-other-bubble: #ffffff;
+  --chat-bg: #f2f2f5;
+}
+
+body[data-theme='azul-negro'] {
+  --ion-color-primary: #1e88e5;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-background-color: #0b111a;
+  --ion-text-color: #eef3f9;
+  --ion-item-background: #141e2c;
+  --ion-card-background: #141e2c;
+  --ion-toolbar-background: #101824;
+  --ion-tab-bar-background: #101824;
+  --chat-my-bubble: #13385c;
+  --chat-other-bubble: #192536;
+  --chat-bg: #0b111a;
+}
+
+body[data-theme='azul-blanco'] {
+  --ion-color-primary: #1565c0;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-background-color: #f2f6fc;
+  --ion-text-color: #16202a;
+  --ion-item-background: #ffffff;
+  --ion-card-background: #ffffff;
+  --ion-toolbar-background: #1565c0;
+  --ion-tab-bar-background: #ffffff;
+  --chat-my-bubble: #e3f2fd;
+  --chat-other-bubble: #ffffff;
+  --chat-bg: #edf3fa;
+}
+
+body[data-theme='verde-negro'] {
+  --ion-color-primary: #00a884;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-background-color: #0b141a;
+  --ion-text-color: #e9edef;
+  --ion-item-background: #182229;
+  --ion-card-background: #182229;
+  --ion-toolbar-background: #1f2c34;
+  --ion-tab-bar-background: #1f2c34;
+  --chat-my-bubble: #005c4b;
+  --chat-other-bubble: #202c33;
+  --chat-bg: #0b141a;
+}
+
+body[data-theme='verde-blanco'] {
+  --ion-color-primary: #008069;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-background-color: #f4f7f5;
+  --ion-text-color: #111b21;
+  --ion-item-background: #ffffff;
+  --ion-card-background: #ffffff;
+  --ion-toolbar-background: #008069;
+  --ion-tab-bar-background: #ffffff;
+  --chat-my-bubble: #d9fdd3;
+  --chat-other-bubble: #ffffff;
+  --chat-bg: #efeae2;
+}
+
+/* Ajuste limpio de barras y tarjetas */
+ion-header ion-toolbar {
+  --background: var(--ion-color-primary);
+  --color: #ffffff;
+}
+
+ion-searchbar {
+  --background: rgba(255, 255, 255, 0.16);
+  --color: #ffffff;
+  --placeholder-color: rgba(255, 255, 255, 0.8);
+  --icon-color: #ffffff;
+}

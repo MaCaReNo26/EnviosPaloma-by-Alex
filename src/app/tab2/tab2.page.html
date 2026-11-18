@@ -1,15 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> Tab 2 </ion-title>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Mi Perfil</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <div class="ion-text-center ion-margin-bottom">
+    <ion-avatar style="width: 90px; height: 90px; margin: 0 auto;" (click)="changeAvatar()">
+      <img [src]="user.avatar" />
+    </ion-avatar>
+    <p><small>Toca la foto para cambiarla</small></p>
+  </div>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-item>
+    <ion-input label="Nombre" labelPlacement="floating" [(ngModel)]="user.name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Estado / Biografía" labelPlacement="floating" [(ngModel)]="user.bio"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-select label="Disponibilidad" [(ngModel)]="user.status">
+      <ion-select-option value="En línea">🟢 En línea</ion-select-option>
+      <ion-select-option value="Ocupado">🔴 Ocupado</ion-select-option>
+      <ion-select-option value="Ausente">🟡 Ausente</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-button expand="block" class="ion-margin-top" (click)="saveProfile()">Guardar Cambios</ion-button>
+  <ion-button expand="block" color="danger" fill="outline" class="ion-margin-top" (click)="logout()">Cerrar Sesión</ion-button>
 </ion-content>

@@ -1,15 +1,59 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> Tab 1 </ion-title>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title><strong>ChatDual</strong></ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="openThemeSelector()" aria-label="Cambiar tema">
+        <ion-icon slot="icon-only" name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-toolbar color="primary">
+    <ion-searchbar
+      [placeholder]="segment === 'rooms' ? 'Buscar sala...' : 'Buscar persona...'"
+      (ionInput)="onSearch($event)">
+    </ion-searchbar>
+  </ion-toolbar>
+
+  <ion-toolbar color="primary">
+    <ion-segment [(ngModel)]="segment" color="light">
+      <ion-segment-button value="rooms">
+        <ion-label>Salas</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="users">
+        <ion-label>Personas (1 a 1)</ion-label>
+      </ion-segment-button>
+    </ion-segment>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-list *ngIf="segment === 'rooms'">
+    <ion-item *ngFor="let room of filteredRooms" button (click)="openRoom(room)">
+      <ion-icon name="chatbubbles-outline" slot="start" color="primary"></ion-icon>
+      <ion-label>
+        <h2><strong>{{ room.name }}</strong></h2>
+        <p>{{ room.description || 'Sala grupal' }} • Por {{ room.createdBy }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-list *ngIf="segment === 'users'">
+    <ion-item *ngFor="let u of filteredUsers" button (click)="openDirectChat(u)">
+      <ion-avatar slot="start">
+        <img [src]="u.avatar" />
+      </ion-avatar>
+      <ion-label>
+        <h2><strong>{{ u.name }}</strong></h2>
+        <p>{{ u.bio || 'Disponible' }}</p>
+      </ion-label>
+      <ion-badge slot="end" color="primary">{{ u.status || 'En línea' }}</ion-badge>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab *ngIf="segment === 'rooms'" vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="primary" (click)="newRoom()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
