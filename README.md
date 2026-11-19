@@ -338,12 +338,14 @@ A continuación se presentan las principales interfaces de Envíos Paloma.
 
 <p align="center">
   <strong>Splash Screen</strong><br>
+  
   <img src="https://github.com/user-attachments/assets/19fe46d4-1581-4d1a-b30b-36af5391cb5b" width="160">
+  
 </p>
 
 ### 9.2. Gestión de chats grupales
 
-<table>
+<table align="center">
   <tr>
     <th>Chats grupales</th>
     <th>Creación de nuevo chat grupal</th>
@@ -360,7 +362,7 @@ A continuación se presentan las principales interfaces de Envíos Paloma.
 
 ### 9.3. Chats privados
 
-<table>
+<table align="center">
   <tr>
     <th>Chats personales</th>
     <th>Chat con un usuario</th>
@@ -372,20 +374,20 @@ A continuación se presentan las principales interfaces de Envíos Paloma.
     <td align="center">
       <img src="https://github.com/user-attachments/assets/3045d264-de2f-43cb-999b-67632cff03ca" width="160">
     </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/0bb233b0-9407-42b6-b721-3ec3ad1ee712" width="160">
+    </td>
   </tr>
 </table>
 
 ### 9.4. Perfil y personalización
 
-<table>
+<table align="center">
   <tr>
     <th>Perfil de usuario</th>
     <th>Personalización de temas</th>
   </tr>
   <tr>
-    <td align="center">
-      <img src="https://github.com/user-attachments/assets/0bb233b0-9407-42b6-b721-3ec3ad1ee712" width="160">
-    </td>
     <td align="center">
       <img src="https://github.com/user-attachments/assets/83864284-efe7-4de8-9f79-f86e17ef500a" width="160">
     </td>
