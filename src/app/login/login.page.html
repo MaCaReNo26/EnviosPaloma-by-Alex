@@ -1,23 +1,30 @@
 <ion-content class="ion-padding">
-  <div class="ion-text-center ion-margin-top">
-    <h2>Envíos Paloma</h2>
-    <p>{{ isRegister ? 'Crea tu cuenta' : 'Inicia sesión' }}</p>
+  <div style="display: flex; flex-direction: column; justify-content: center; min-height: 100%; max-width: 420px; margin: 0 auto;">
+    
+    <div class="ion-text-center ion-margin-bottom">
+      <h2><strong>Envíos Paloma</strong></h2>
+      <p>{{ isRegister ? 'Crea tu cuenta' : 'Inicia sesión' }}</p>
+    </div>
+
+    <ion-item *ngIf="isRegister">
+      <ion-input label="Nombre completo" labelPlacement="floating" [(ngModel)]="name"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-input label="Correo" labelPlacement="floating" type="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-input label="Contraseña" labelPlacement="floating" type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" class="ion-margin-top" (click)="submit()">
+      {{ isRegister ? 'Registrarme' : 'Ingresar' }}
+    </ion-button>
+    
+    <ion-button expand="block" fill="clear" (click)="isRegister = !isRegister">
+      {{ isRegister ? '¿Ya tienes cuenta? Inicia sesión' : '¿No tienes cuenta? Regístrate' }}
+    </ion-button>
+
   </div>
-
-  <ion-item *ngIf="isRegister">
-    <ion-input label="Nombre completo" labelPlacement="floating" [(ngModel)]="name"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-input label="Correo" labelPlacement="floating" type="email" [(ngModel)]="email"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-input label="Contraseña" labelPlacement="floating" type="password" [(ngModel)]="password"></ion-input>
-  </ion-item>
-
-  <ion-button expand="block" class="ion-margin-top" (click)="submit()">
-    {{ isRegister ? 'Registrarme' : 'Ingresar' }}
-  </ion-button>
-  <ion-button expand="block" fill="clear" (click)="isRegister = !isRegister">
-    {{ isRegister ? '¿Ya tienes cuenta? Inicia sesión' : '¿No tienes cuenta? Regístrate' }}
-  </ion-button>
 </ion-content>
