@@ -420,9 +420,3 @@ Ademas en la carpeta APK se encuentra una versión descargable de Envíos Paloma
 **Alex Suarez**
 
 Proyecto académico desarrollado individualmente.
-
-**Repositorio:** [EnviosPaloma-by-Alex](https://github.com/MaCaReNo26/EnviosPaloma-by-Alex)
-
----
-
-*Envíos Paloma: una aplicación de mensajería que integra tecnologías de backend en la nube para ofrecer comunicación privada y grupal en tiempo real.*
