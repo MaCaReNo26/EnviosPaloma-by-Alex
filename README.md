@@ -413,6 +413,8 @@ Acceso a la aplicación:
 
 https://chat-dual-app.web.app
 
+Ademas en la carpeta APK se encuentra una versión descargable de Envíos Paloma para probar su funcionalidad en un celular 
+
 ## 12. Autor
 
 **Alex Suarez**
