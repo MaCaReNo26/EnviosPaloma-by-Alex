@@ -391,6 +391,9 @@ A continuación se presentan las principales interfaces de Envíos Paloma.
     <td align="center">
       <img src="https://github.com/user-attachments/assets/83864284-efe7-4de8-9f79-f86e17ef500a" width="160">
     </td>
+    <td align="center">
+      <img width="720" height="1576" alt="image" src="https://github.com/user-attachments/assets/504d7f72-48e8-4481-b672-1ba6649af971" />
+    </td>
   </tr>
 </table>
 
