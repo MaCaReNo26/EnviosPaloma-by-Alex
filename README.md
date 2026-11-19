@@ -405,7 +405,15 @@ El propósito principal consiste en demostrar la capacidad de implementar una ap
 
 Asimismo, el desarrollo permite aplicar conocimientos de programación con Angular e Ionic, integración de servicios externos, bases de datos relacionales y no relacionales, comunicación mediante WebSockets y acceso a funcionalidades nativas de dispositivos móviles.
 
-## 11. Autor
+## 11. Despligue
+
+La aplicación cuenta con una versión web desplegada mediante Firebase Hosting, lo que permite acceder a Envíos Paloma directamente desde un navegador sin necesidad de instalar la aplicación en un dispositivo móvil.
+
+Acceso a la aplicación:
+
+https://chat-dual-app.web.app
+
+## 12. Autor
 
 **Alex Suarez**
 
