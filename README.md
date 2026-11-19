@@ -332,37 +332,65 @@ La clave pública de Supabase utilizada por el cliente no sustituye las polític
 
 ## 9. Capturas de pantalla
 
-A continuación se presentan las principales interfaces de Envíos Paloma, mostrando las funcionalidades de navegación, gestión de chats grupales, conversaciones privadas y administración del perfil.
+A continuación se presentan las principales interfaces de Envíos Paloma.
 
 ### 9.1. Pantalla de inicio
 
-**Splash Screen**
-
-![Splash Screen de Envíos Paloma](https://github.com/user-attachments/assets/19fe46d4-1581-4d1a-b30b-36af5391cb5b)
-
-*Pantalla de presentación inicial de la aplicación.*
+<p align="center">
+  <strong>Splash Screen</strong><br>
+  <img src="https://github.com/user-attachments/assets/19fe46d4-1581-4d1a-b30b-36af5391cb5b" width="160">
+</p>
 
 ### 9.2. Gestión de chats grupales
 
-| Chats grupales | Creación de nuevo chat grupal |
-|:---:|:---:|
-| ![Chats grupales](https://github.com/user-attachments/assets/a4357fa9-7c31-4bf5-b1f7-5788b6fb849f) | ![Creación de chat grupal](https://github.com/user-attachments/assets/8f541132-2492-4d2f-a05c-47a39c212820) |
-| Listado de salas grupales disponibles para participar en conversaciones. | Interfaz para crear nuevas salas de conversación grupales. |
+<table>
+  <tr>
+    <th>Chats grupales</th>
+    <th>Creación de nuevo chat grupal</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/a4357fa9-7c31-4bf5-b1f7-5788b6fb849f" width="160">
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/8f541132-2492-4d2f-a05c-47a39c212820" width="160">
+    </td>
+  </tr>
+</table>
 
 ### 9.3. Chats privados
 
-| Chats personales | Chat con un usuario |
-|:---:|:---:|
-| ![Chats personales](https://github.com/user-attachments/assets/52372300-f330-4835-9bf8-d08c4bf575b3) | ![Chat con un usuario](https://github.com/user-attachments/assets/3045d264-de2f-43cb-999b-67632cff03ca) |
-| Listado de usuarios disponibles para iniciar conversaciones individuales. | Interfaz de mensajería privada para intercambiar contenido en tiempo real. |
+<table>
+  <tr>
+    <th>Chats personales</th>
+    <th>Chat con un usuario</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/52372300-f330-4835-9bf8-d08c4bf575b3" width="160">
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/3045d264-de2f-43cb-999b-67632cff03ca" width="160">
+    </td>
+  </tr>
+</table>
 
 ### 9.4. Perfil y personalización
 
-| Perfil de usuario | Personalización de temas |
-|:---:|:---:|
-| ![Perfil de usuario](https://github.com/user-attachments/assets/0bb233b0-9407-42b6-b721-3ec3ad1ee712) | ![Personalización de temas](https://github.com/user-attachments/assets/83864284-efe7-4de8-9f79-f86e17ef500a) |
-| Visualización y edición de información personal y estado de disponibilidad. | Selección de diferentes combinaciones de colores para adaptar la apariencia de la aplicación. |
-
+<table>
+  <tr>
+    <th>Perfil de usuario</th>
+    <th>Personalización de temas</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/0bb233b0-9407-42b6-b721-3ec3ad1ee712" width="160">
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/83864284-efe7-4de8-9f79-f86e17ef500a" width="160">
+    </td>
+  </tr>
+</table>
 
 ## 10. Objetivo académico
 
