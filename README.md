@@ -336,36 +336,32 @@ A continuación se presentan las principales interfaces de Envíos Paloma, mostr
 
 ### 9.1. Pantalla de inicio
 
-\<p align="center">   \<strong>Splash Screen\</strong>   \<br/>   \<img src="[https://github.com/user-attachments/assets/19fe46d4-1581-4d1a-b30b-36af5391cb5b](https://github.com/user-attachments/assets/19fe46d4-1581-4d1a-b30b-36af5391cb5b)" width="280" alt="Splash Screen de Envíos Paloma"/>   \<br/>   \<sub>Pantalla de presentación inicial de la aplicación.\</sub> \</p>
+**Splash Screen**
+
+![Splash Screen de Envíos Paloma](https://github.com/user-attachments/assets/19fe46d4-1581-4d1a-b30b-36af5391cb5b)
+
+*Pantalla de presentación inicial de la aplicación.*
 
 ### 9.2. Gestión de chats grupales
 
-\<table>   \<tr>     \<td align="center" width="50%">       \<strong>Chats grupales\</strong>       \<br/>       \<img src="[https://github.com/user-attachments/assets/a4357fa9-7c31-4bf5-b1f7-5788b6fb849f](https://github.com/user-attachments/assets/a4357fa9-7c31-4bf5-b1f7-5788b6fb849f)" width="260" alt="Chats grupales"/>       \<br/>       \<sub>Listado de salas grupales disponibles para participar en conversaciones.\</sub>     \</td>     \<td align="center" width="50%">       \<strong>Creación de nuevo chat grupal\</strong>       \<br/>       \<img src="[https://github.com/user-attachments/assets/8f541132-2492-4d2f-a05c-47a39c212820](https://github.com/user-attachments/assets/8f541132-2492-4d2f-a05c-47a39c212820)" width="260" alt="Creación de chat grupal"/>       \<br/>       \<sub>Interfaz para crear nuevas salas de conversación grupales.\</sub>     \</td>   \</tr> \</table>
+| Chats grupales | Creación de nuevo chat grupal |
+|:---:|:---:|
+| ![Chats grupales](https://github.com/user-attachments/assets/a4357fa9-7c31-4bf5-b1f7-5788b6fb849f) | ![Creación de chat grupal](https://github.com/user-attachments/assets/8f541132-2492-4d2f-a05c-47a39c212820) |
+| Listado de salas grupales disponibles para participar en conversaciones. | Interfaz para crear nuevas salas de conversación grupales. |
 
 ### 9.3. Chats privados
 
-\<table>
-&#x20; \<tr>
-&#x20;   \<td align="center" width="50%">
-&#x20;     \<strong>Chats personales\</strong>
-&#x20;     \<br/>
-&#x20;     \<img src="[https://github.com/user-attachments/assets/52372300-f330-4835-9bf8-d08c4bf575b3](https://github.com/user-attachments/assets/52372300-f330-4835-9bf8-d08c4bf575b3)" width="260" alt="Listado de chats personales"/>
-&#x20;     \<br/>
-&#x20;     \<sub>Listado de usuarios disponibles para iniciar conversaciones individuales.\</sub>
-&#x20;   \</td>
-&#x20;   \<td align="center" width="50%">
-&#x20;     \<strong>Chat con un usuario\</strong>
-&#x20;     \<br/>
-&#x20;     \<img src="[https://github.com/user-attachments/assets/3045d264-de2f-43cb-999b-67632cff03ca](https://github.com/user-attachments/assets/3045d264-de2f-43cb-999b-67632cff03ca)" width="260" alt="Conversación privada"/>
-&#x20;     \<br/>
-&#x20;     \<sub>Interfaz de mensajería privada para intercambiar contenido en tiempo real.\</sub>
-&#x20;   \</td>
-&#x20; \</tr>
-\</table>
+| Chats personales | Chat con un usuario |
+|:---:|:---:|
+| ![Chats personales](https://github.com/user-attachments/assets/52372300-f330-4835-9bf8-d08c4bf575b3) | ![Chat con un usuario](https://github.com/user-attachments/assets/3045d264-de2f-43cb-999b-67632cff03ca) |
+| Listado de usuarios disponibles para iniciar conversaciones individuales. | Interfaz de mensajería privada para intercambiar contenido en tiempo real. |
 
 ### 9.4. Perfil y personalización
 
-\<table>   \<tr>     \<td align="center" width="50%">       \<strong>Perfil de usuario\</strong>       \<br/>       \<img src="[https://github.com/user-attachments/assets/0bb233b0-9407-42b6-b721-3ec3ad1ee712](https://github.com/user-attachments/assets/0bb233b0-9407-42b6-b721-3ec3ad1ee712)" width="260" alt="Perfil de usuario"/>       \<br/>       \<sub>Visualización y edición de la información personal y estado de disponibilidad.\</sub>     \</td>     \<td align="center" width="50%">       \<strong>Personalización de temas\</strong>       \<br/>       \<img src="[https://github.com/user-attachments/assets/83864284-efe7-4de8-9f79-f86e17ef500a](https://github.com/user-attachments/assets/83864284-efe7-4de8-9f79-f86e17ef500a)" width="260" alt="Personalización de temas"/>       \<br/>       \<sub>Selección de diferentes combinaciones de colores para adaptar la apariencia de la aplicación.\</sub>     \</td>   \</tr> \</table>
+| Perfil de usuario | Personalización de temas |
+|:---:|:---:|
+| ![Perfil de usuario](https://github.com/user-attachments/assets/0bb233b0-9407-42b6-b721-3ec3ad1ee712) | ![Personalización de temas](https://github.com/user-attachments/assets/83864284-efe7-4de8-9f79-f86e17ef500a) |
+| Visualización y edición de información personal y estado de disponibilidad. | Selección de diferentes combinaciones de colores para adaptar la apariencia de la aplicación. |
 
 
 ## 10. Objetivo académico
