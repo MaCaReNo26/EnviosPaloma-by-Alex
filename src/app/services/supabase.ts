@@ -22,8 +22,14 @@ export class SupabaseService {
 
   // mensajes en tiempo real
   subscribeToMessages(roomId: string, callback: (msg: any) => void) {
+    const channelName = `room-${roomId}`;
+    const existing = this.supabase.getChannels().find(c => c.topic === `realtime:${channelName}`);
+    if (existing) {
+      this.supabase.removeChannel(existing);
+    }
+
     return this.supabase
-      .channel(`room-${roomId}`)
+      .channel(channelName)
       .on('postgres_changes', {
         event: 'INSERT',
         schema: 'public',
@@ -33,6 +39,12 @@ export class SupabaseService {
         callback(payload.new);
       })
       .subscribe();
+  }
+
+  unsubscribeFromMessages(channel: any) {
+    if (channel) {
+      this.supabase.removeChannel(channel);
+    }
   }
 
   // enviar mensaje - texto, imagen o documento

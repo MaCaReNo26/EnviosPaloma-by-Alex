@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, NgZone, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild, NgZone, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
@@ -23,13 +23,14 @@ import { FirebaseService } from '../services/firebase';
     IonCard, IonCardContent, IonAvatar
   ]
 })
-export class ChatRoomPage implements OnInit {
+export class ChatRoomPage implements OnInit, OnDestroy {
   @ViewChild(IonContent) content!: IonContent;
   roomId = '';
   roomName = 'Sala';
   messages: any[] = [];
   newMessage = '';
   currentUser: any = null;
+  private channel: any;
 
   constructor(
     private route: ActivatedRoute, 
@@ -55,7 +56,7 @@ export class ChatRoomPage implements OnInit {
       this.scrollToBottom();
     });
 
-    this.sb.subscribeToMessages(this.roomId, (msg) => {
+    this.channel = this.sb.subscribeToMessages(this.roomId, (msg) => {
       this.zone.run(() => {
         if (!this.messages.some(m => m.id === msg.id)) {
           this.messages.push(msg);
@@ -64,6 +65,10 @@ export class ChatRoomPage implements OnInit {
         }
       });
     });
+  }
+
+  ngOnDestroy() {
+    this.sb.unsubscribeFromMessages(this.channel);
   }
 
   private pushIfNotExists(msg: any) {
