@@ -150,7 +150,13 @@ export class ChatRoomPage implements OnInit, OnDestroy {
   }
 
   async sendLocation() {
-    const pos = await Geolocation.getCurrentPosition();
+  try {
+    await Geolocation.requestPermissions();
+    const pos = await Geolocation.getCurrentPosition({
+      enableHighAccuracy: true,
+      timeout: 10000,
+      maximumAge: 0
+    });
     const sender = this.getSender();
     const saved = await this.sb.sendMessage({
       room_id: this.roomId,
@@ -163,7 +169,10 @@ export class ChatRoomPage implements OnInit, OnDestroy {
       lng: pos.coords.longitude
     });
     this.pushIfNotExists(saved);
+  } catch (e) {
+    alert('Activa el GPS en alta precisión y concede el permiso de ubicación.');
   }
+}
 
   async deleteMsg(id: number) {
     await this.sb.deleteMessage(id);

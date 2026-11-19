@@ -42,9 +42,9 @@
         </div>
 
         <div *ngIf="m.file_type === 'location'" style="margin-top: 8px;">
-          <a [href]="'https://www.google.com/maps?q=' + m.lat + ',' + m.lng" target="_blank"
+          <a [href]="'https://www.google.com/maps/search/?api=1&query=' + m.lat + ',' + m.lng" target="_blank"
             style="color: var(--ion-color-primary); font-weight: 600;">
-            📍 Ver ubicación en Google Maps ({{ m.lat | number:'1.4-4' }}, {{ m.lng | number:'1.4-4' }})
+            📍 Ver ubicación exacta ({{ m.lat | number:'1.4-4' }}, {{ m.lng | number:'1.4-4' }})
           </a>
         </div>
 
